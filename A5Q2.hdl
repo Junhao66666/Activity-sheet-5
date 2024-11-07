@@ -1,0 +1,16 @@
+
+CHIP A5Q2<201890735> {
+    IN U, O, G;
+    OUT X;
+    
+    PARTS:
+
+    Not (in = G, out = notG);
+    Not (in = O, out = notO);
+
+    Or (a = U, b = outO, out = or1_out);
+    Or (a = U, b = outO, out = or2_out);
+    Or (a = or1_out, b = or2_out, out = or3_out);
+
+    And (a = notG, b = or3_out, out = X);
+}
