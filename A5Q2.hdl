@@ -1,10 +1,8 @@
 
-CHIP A502_201890735 {
+CHIP A5Q2_201890735 {
     IN U, O, G;
     OUT X;
-
     PARTS:
-    
     Not(in=U, out=U_not);
     And(a=O, b=G, out=and1);
     And(a=U_not, b=and1, out=and2);
