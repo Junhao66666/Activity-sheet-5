@@ -1,5 +1,5 @@
 
-CHIP A5Q2<201890735> {
+CHIP A5Q2_201890735{
     IN U, O, G;
     OUT X;
     
